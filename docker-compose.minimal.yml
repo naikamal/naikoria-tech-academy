@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: tutoring_platform
+      POSTGRES_USER: tutoring_user
+      POSTGRES_PASSWORD: tutoring_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Django Web Service - Minimal Setup
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile.simple
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8000"  # External 8080 maps to internal 8000
+    environment:
+      - DATABASE_URL=postgresql://tutoring_user:tutoring_pass@db:5432/tutoring_platform
+      - SECRET_KEY=naikoria-minimal-secret-key-2024
+      - DEBUG=True
+      - ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

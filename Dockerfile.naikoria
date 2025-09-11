@@ -1,0 +1,36 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    postgresql-client \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install minimal Python packages
+RUN pip install --no-cache-dir \
+    django==4.2.7 \
+    djangorestframework==3.14.0 \
+    psycopg2-binary==2.9.7 \
+    django-environ==0.11.2 \
+    django-cors-headers==4.3.1 \
+    djangorestframework-simplejwt==5.3.0 \
+    redis==5.0.1 \
+    Pillow==10.1.0 \
+    channels==4.0.0
+
+# Copy project files
+COPY . /app/
+
+# Create directories
+RUN mkdir -p /app/staticfiles /app/media /app/logs
+
+# Try to collect static files
+RUN python manage.py collectstatic --noinput --settings=tutoring_platform.settings || echo "Static collection skipped"
+
+EXPOSE 8080
+
+# Start Django on port 8080 to avoid conflicts
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8080", "--settings=tutoring_platform.settings"]

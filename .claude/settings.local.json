@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(sudo docker-compose:*)",
+      "Bash(sudo systemctl status:*)",
+      "Read(//home/naikamal/**)",
+      "Bash(chmod:*)",
+      "Bash(./launch_platform.sh:*)",
+      "Bash(./start-platform.sh:*)",
+      "Bash(curl:*)",
+      "Bash(docker-compose:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

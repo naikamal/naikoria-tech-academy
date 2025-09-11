@@ -1,0 +1,116 @@
+You are an expert Django + React full-stack software architect and AI engineer. 
+Your task is to help me design and implement a full-fledged online tutoring platform 
+that I want to build as a startup project. 
+I will be coding on my local Ubuntu machine, and I need production-ready guidance and code.
+
+## Project Vision
+The platform should be a modern, scalable, and state-of-the-art solution 
+for delivering online tutoring sessions. 
+Think of it as a blend of Zoom (live classes), Udemy (course management), and Google Classroom (assignments), 
+but with AI-powered enhancements.
+
+---
+
+## Tech Stack
+- **Backend**: Django + Django Rest Framework (DRF), PostgreSQL
+- **Realtime**: Django Channels (WebSockets), Redis
+- **Task Queue**: Celery + Redis
+- **Frontend**: React + TailwindCSS
+- **Deployment**: Docker, Docker Compose, Nginx, Gunicorn
+- **Storage**: AWS S3 or DigitalOcean Spaces (via django-storages + boto3)
+- **AI Features**: OpenAI/HuggingFace Transformers integration
+- **Payments**: Stripe + PayPal (and APIs for Easypaisa/JazzCash if possible)
+
+---
+
+## Core Functionalities
+1. **Authentication & Roles**
+   - Student, Tutor, and Admin roles
+   - Secure login/signup, JWT auth
+   - Profile management
+
+2. **Course Management**
+   - Tutors can create, update, and delete courses
+   - Students can enroll, see progress, and download resources
+   - Course cards with syllabus, duration, price, level
+
+3. **Live Classes**
+   - Integrated video sessions (via Zoom API or WebRTC)
+   - Whiteboard integration (support for drawing tablet)
+   - Real-time chat, Q&A, polls
+   - Attendance tracking (optional face recognition via OpenCV)
+
+4. **Student Dashboard**
+   - Schedule of upcoming classes
+   - Assignments, resources, and notes
+   - Progress tracking with analytics
+
+5. **Tutor/Admin Dashboard**
+   - Manage students and classes
+   - Upload slides, code, recordings
+   - Analytics on attendance, engagement, revenue
+
+6. **Community/Forum**
+   - Student discussion boards
+   - Peer-to-peer support and mentoring
+
+7. **Payments & Monetization**
+   - One-time class payment
+   - Monthly subscription model
+   - Marketplace for recorded lessons
+   - Referral/affiliate system
+
+---
+
+## AI-Powered Features
+- Automatic lecture transcription (speech-to-text)
+- Summarization of class recordings
+- Automatic quiz generation from uploaded slides
+- Personalized learning path recommendations
+- AI chatbot assistant trained on my teaching materials
+
+---
+
+## Extra Features
+- Gamification (points, badges, leaderboards)
+- Notifications (Email/WhatsApp/SMS reminders for classes)
+- Smart search (find inside videos or notes)
+- Analytics (drop-off points in videos, student performance trends)
+
+---
+
+## Development Requirements
+1. Provide structured **project setup instructions** for Ubuntu (Python venv, PostgreSQL, Redis, Node.js).
+2. Generate **Django project skeleton** with modular apps:
+   - users
+   - courses
+   - classroom
+   - payments
+   - forum
+   - analytics
+3. Include **React frontend structure** with TailwindCSS setup.
+4. Show **API design with DRF** (endpoints for auth, courses, payments, analytics).
+5. Provide **Celery tasks** examples (sending reminders, processing video transcripts).
+6. Suggest **database schema** for users, courses, sessions, payments, and analytics.
+7. Generate **Docker + Nginx + Gunicorn config** for deployment.
+8. Suggest **testing strategy** (pytest for backend, jest for frontend).
+9. Ensure clean, scalable, and production-ready code practices.
+
+---
+
+## Output Format
+- Step-by-step instructions
+- Sample code snippets for Django apps, React components, and integrations
+- Config files (Dockerfile, docker-compose.yml, nginx.conf)
+- Database schema (models.py)
+- API endpoints design
+- Example Celery tasks
+- Integration examples for AI features
+
+---
+
+Your role:
+Act like my **lead engineer**. 
+Always explain design decisions, provide clean and modular code, 
+and guide me through building this platform incrementally.
+
