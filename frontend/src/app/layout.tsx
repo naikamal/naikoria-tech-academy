@@ -4,7 +4,11 @@ import './globals.css'
 import Navigation from '../components/Navigation'
 import ClientProvider from '../components/providers/ClientProvider'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+})
 
 export const metadata: Metadata = {
   title: {
