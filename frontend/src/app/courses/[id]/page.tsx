@@ -176,7 +176,7 @@ export default function CourseDetailPage() {
           }
         };
 
-        const selectedCourse = mockCourses[courseId as keyof typeof mockCourses] || mockCourses[1];
+        const selectedCourse = mockCourses[courseId as '1' | '2' | '3' | '4'] || mockCourses['1'];
         setCourse({
           ...selectedCourse,
           curriculum: courseId === '1' ? [

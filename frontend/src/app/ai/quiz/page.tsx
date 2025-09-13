@@ -258,15 +258,15 @@ export default function AIQuizPage() {
                     {question.options.map((option, optionIndex) => {
                       const isSelected = userAnswers[question.id] === optionIndex;
                       const isCorrect = optionIndex === question.correct_answer;
-                      const showResults = showResults;
+                      const shouldShowResults = showResults;
                       
                       return (
                         <button
                           key={optionIndex}
                           onClick={() => handleAnswerSelect(question.id, optionIndex)}
-                          disabled={showResults}
+                          disabled={shouldShowResults}
                           className={`w-full text-left p-4 border-2 rounded-lg transition-all flex items-center ${
-                            showResults
+                            shouldShowResults
                               ? isCorrect
                                 ? 'border-green-500 bg-green-50'
                                 : isSelected
@@ -278,7 +278,7 @@ export default function AIQuizPage() {
                           }`}
                         >
                           <span className="flex-grow">{option}</span>
-                          {showResults && (
+                          {shouldShowResults && (
                             <span className="ml-2">
                               {isCorrect ? (
                                 <CheckCircleIcon className="h-5 w-5 text-green-500" />
