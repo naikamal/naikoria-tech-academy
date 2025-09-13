@@ -43,8 +43,8 @@ const staggerContainer = {
 
 const features = [
   {
-    name: 'AI Personal Tutor',
-    description: 'Get 24/7 support from your personal AI tutor powered by advanced language models.',
+    name: 'Smart Personal Tutor',
+    description: 'Get 24/7 support from your personal smart tutor with advanced learning algorithms.',
     icon: Sparkles,
     gradient: 'from-brand-500 to-accent-500',
   },
@@ -56,13 +56,13 @@ const features = [
   },
   {
     name: 'Smart Content Creation',
-    description: 'AI-generated quizzes, assignments, and personalized learning paths.',
+    description: 'Smart quizzes, assignments, and personalized learning paths tailored to your needs.',
     icon: GraduationCap,
     gradient: 'from-accent-500 to-teal-500',
   },
   {
     name: 'Real-time Communication',
-    description: 'Chat with tutors and peers using our advanced messaging system with AI assistance.',
+    description: 'Chat with tutors and peers using our advanced messaging system with intelligent features.',
     icon: MessageCircle,
     gradient: 'from-brand-600 to-accent-600',
   },
@@ -102,7 +102,7 @@ export default function HomePage() {
             className="hidden sm:mb-8 sm:flex sm:justify-center"
           >
             <div className="relative rounded-full px-4 py-2 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 bg-white/80 backdrop-blur-sm">
-              Powered by AI and built by{' '}
+              Built with advanced technology by{' '}
               <span className="font-semibold bg-gradient-to-r from-brand-600 to-accent-600 bg-clip-text text-transparent">
                 Naik Amal Shah
               </span>
@@ -130,7 +130,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mt-6 text-lg leading-8 text-gray-600"
             >
-              The most intelligent online tutoring platform. Learn with AI-powered assistance, 
+              The most intelligent online tutoring platform. Learn with smart assistance, 
               join live interactive sessions, and achieve your educational goals with personalized guidance.
             </motion.p>
             
@@ -181,7 +181,7 @@ export default function HomePage() {
             Everything you need for modern education
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Experience the future of online learning with our AI-powered platform that adapts to your learning style.
+            Experience the future of online learning with our smart platform that adapts to your learning style.
           </p>
         </motion.div>
         
@@ -273,7 +273,7 @@ export default function HomePage() {
                 Start your learning journey today
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Get access to AI-powered tutoring, live sessions, and a community of learners. 
+                Get access to smart tutoring, live sessions, and a community of learners. 
                 Your education transformation starts here.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">

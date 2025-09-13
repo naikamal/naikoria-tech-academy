@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: 'Naikoria Tech Academy',
     template: '%s | Naikoria Tech Academy',
   },
-  description: 'AI-Powered Online Tutoring Platform by Naik Amal Shah. Learn with intelligent tutoring, live sessions, and personalized education.',
+  description: 'Smart Online Tutoring Platform by Naik Amal Shah. Learn with intelligent tutoring, live sessions, and personalized education.',
   keywords: ['online tutoring', 'AI education', 'live classes', 'personalized learning', 'Naikoria'],
   authors: [{ name: 'Naik Amal Shah' }],
   creator: 'Naik Amal Shah',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Naikoria Tech Academy - AI-Powered Online Tutoring',
+    title: 'Naikoria Tech Academy - Smart Online Tutoring',
     description: 'The most intelligent tutoring platform with AI-powered learning, live sessions, and personalized education.',
     url: 'https://naikoria.com',
     siteName: 'Naikoria Tech Academy',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Naikoria Tech Academy - AI-Powered Online Tutoring',
+    title: 'Naikoria Tech Academy - Smart Online Tutoring',
     description: 'The most intelligent tutoring platform with AI-powered learning.',
     images: ['/twitter-image.png'],
     creator: '@naikoria',

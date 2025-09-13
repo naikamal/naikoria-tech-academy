@@ -88,8 +88,8 @@ function DashboardPage() {
         {
           id: 3,
           type: 'session_joined',
-          title: 'Live Session: AI Integration',
-          course: 'AI Development',
+          title: 'Live Session: Smart Integration',
+          course: 'Smart Development',
           time: '2 days ago',
           icon: Users,
           color: 'text-blue-600'
@@ -232,7 +232,7 @@ function DashboardPage() {
                   { name: 'Overview', href: '/dashboard', icon: BarChart3, current: true },
                   { name: 'My Courses', href: '/dashboard/courses', icon: BookOpen },
                   { name: 'Live Sessions', href: '/dashboard/sessions', icon: Users },
-                  { name: 'AI Tutor', href: '/ai', icon: Brain },
+                  { name: 'Smart Tutor', href: '/ai', icon: Brain },
                   { name: 'Achievements', href: '/dashboard/achievements', icon: Trophy },
                   { name: 'Schedule', href: '/dashboard/schedule', icon: Calendar },
                   { name: 'Settings', href: '/dashboard/settings', icon: Settings }
@@ -465,7 +465,7 @@ function DashboardPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h2 className="text-lg font-semibold">Ready to learn something new?</h2>
-                    <p className="text-brand-100 mt-1">Explore our AI-powered courses and live sessions</p>
+                    <p className="text-brand-100 mt-1">Explore our smart courses and live sessions</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <Link href="/courses">
@@ -483,7 +483,7 @@ function DashboardPage() {
                         whileTap={{ scale: 0.95 }}
                         className="px-4 py-2 bg-white text-brand-600 rounded-xl hover:bg-gray-50 transition-all duration-200 text-sm font-medium"
                       >
-                        AI Tutor
+                        Smart Tutor
                       </motion.button>
                     </Link>
                   </div>

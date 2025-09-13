@@ -1,14 +1,14 @@
 # Naikoria Tech Academy
 
-**AI-Powered Online Tutoring Platform** by Naik Amal Shah
+**Smart Online Tutoring Platform** by Naik Amal Shah
 
-A comprehensive educational platform featuring AI-powered learning, live interactive sessions, and personalized education experiences optimized for Pakistan.
+A comprehensive educational platform featuring smart learning technology, live interactive sessions, and personalized education experiences optimized for Pakistan.
 
 ## Features
 
-### AI-Powered Learning
-- **AI Personal Tutor**: 24/7 support with intelligent responses (FREE template-based system)
-- **Smart Quiz Generation**: Create personalized quizzes on any topic
+### Smart Learning Technology
+- **Smart Personal Tutor**: 24/7 support with intelligent responses (FREE template-based system)
+- **Intelligent Quiz Generation**: Create personalized quizzes on any topic
 - **Adaptive Learning Paths**: Customized content based on student progress
 
 ### Course Management

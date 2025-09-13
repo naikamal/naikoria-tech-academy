@@ -70,7 +70,7 @@ export default function RegisterPage() {
   };
 
   const userTypes = [
-    { value: 'student', label: 'Student', icon: User, description: 'Learn with AI-powered assistance', gradient: 'from-teal-500 to-brand-500' },
+    { value: 'student', label: 'Student', icon: User, description: 'Learn with smart assistance', gradient: 'from-teal-500 to-brand-500' },
     { value: 'tutor', label: 'Tutor', icon: GraduationCap, description: 'Teach and inspire students', gradient: 'from-brand-500 to-accent-500' },
     { value: 'admin', label: 'Administrator', icon: Users, description: 'Manage platform operations', gradient: 'from-accent-500 to-teal-500' }
   ];
