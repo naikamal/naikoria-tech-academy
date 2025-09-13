@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Educational Platform Styling for Naikoria Tech Academy */
+/* Modern Naikoria Tech Academy - Premium Educational Platform */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* Educational Theme Colors */
@@ -317,7 +318,18 @@ body {
   font-family: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
-/* Responsive utilities */
+/* Responsive utilities - Home page specific */
+@media (min-width: 640px) {
+  .sm\:py-48 {
+    padding-top: 0rem;
+    padding-bottom: 12rem;
+  }
+  
+  .hero-section {
+    padding-top: 0rem;
+  }
+}
+
 @media (max-width: 640px) {
   .btn-primary,
   .btn-secondary,
